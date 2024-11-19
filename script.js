@@ -36,6 +36,8 @@ function nextPage(pageNumber) {
         document.getElementById("question-page2").style.display = "block";
     } else if (pageNumber === 2) {
         alert("Obrigado por responder!");
+    } else if (pageNumber === 3) {
+        alert("Obrigado por responder!");
     }
 }
 
