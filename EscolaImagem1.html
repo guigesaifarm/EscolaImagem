@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário com Imagens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="question-page">
+            <h1>Questionário de Imagens</h1>
+            <div class="question">
+                <p>1. Qual imagem corresponde a um gato?</p>
+                <img src="imagens/imagem1.jpg" alt="Imagem 1" class="quiz-image" id="image1">
+                <img src="imagens/imagem2.jpg" alt="Imagem 2" class="quiz-image" id="image2">
+            </div>
+            <button onclick="nextPage(1)">Próxima Pergunta</button>
+        </div>
+        <div id="question-page2" style="display: none;">
+            <h1>Questionário de Imagens</h1>
+            <div class="question">
+                <p>2. Qual imagem corresponde a um cachorro?</p>
+                <img src="imagens/imagem1.jpg" alt="Imagem 1" class="quiz-image" id="image3">
+                <img src="imagens/imagem2.jpg" alt="Imagem 2" class="quiz-image" id="image4">
+            </div>
+            <button onclick="nextPage(2)">Finalizar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
