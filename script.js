@@ -29,6 +29,7 @@ function nextPage(pageNumber) {
     // Esconde todas as páginas de perguntas
     document.getElementById("question-page").style.display = "none";
     document.getElementById("question-page2").style.display = "none";
+    document.getElementById("question-page3").style.display = "none";
     
     // Mostra a página atual
     if (pageNumber === 1) {
@@ -47,7 +48,8 @@ function checkAnswer(selectedImageId, pageNumber) {
         correctAnswer = "image1"; // Exemplo: o gato é a imagem1
     } else if (pageNumber === 2) {
         correctAnswer = "image4"; // Exemplo: o cachorro é a imagem4
-    }
+    } else if (pageNumber === 3) {
+        correctAnswer = "image4"; // Exemplo: o cachorro é a imagem4
 
     // Verificar se a resposta está correta
     if (selectedImageId === correctAnswer) {
