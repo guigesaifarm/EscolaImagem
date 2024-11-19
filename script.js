@@ -51,7 +51,7 @@ function checkAnswer(selectedImageId, pageNumber) {
     } else if (pageNumber === 2) {
         correctAnswer = "image4"; // Exemplo: o cachorro é a imagem4
     } else if (pageNumber === 3) {
-        correctAnswer = "image4"; // Exemplo: o cachorro é a imagem4
+        correctAnswer = "image6"; // Exemplo: o cachorro é a imagem6
 
     // Verificar se a resposta está correta
     if (selectedImageId === correctAnswer) {
