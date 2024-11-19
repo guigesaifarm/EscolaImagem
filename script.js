@@ -1,5 +1,31 @@
+// Variável para armazenar a imagem selecionada
+let selectedImageId = null;
+
+// Função para selecionar a imagem
+function selectImage(imageId) {
+    // Desmarcar qualquer imagem previamente selecionada
+    const images = document.querySelectorAll('.quiz-image');
+    images.forEach(image => image.classList.remove('selected'));
+
+    // Marcar a imagem clicada como selecionada
+    const selectedImage = document.getElementById(imageId);
+    selectedImage.classList.add('selected');
+
+    // Armazenar a imagem selecionada
+    selectedImageId = imageId;
+}
+
 // Função para ir para a próxima página
 function nextPage(pageNumber) {
+    // Verificar se uma imagem foi selecionada antes de continuar
+    if (selectedImageId === null) {
+        alert("Por favor, selecione uma imagem antes de continuar.");
+        return;
+    }
+
+    // Verificar a resposta
+    checkAnswer(selectedImageId, pageNumber);
+
     // Esconde todas as páginas de perguntas
     document.getElementById("question-page").style.display = "none";
     document.getElementById("question-page2").style.display = "none";
@@ -12,9 +38,19 @@ function nextPage(pageNumber) {
     }
 }
 
-// Função para verificar qual imagem foi selecionada
-function checkAnswer(selectedImageId) {
-    if (selectedImageId === "image1" || selectedImageId === "image3") {
+// Função para verificar a resposta
+function checkAnswer(selectedImageId, pageNumber) {
+    let correctAnswer;
+
+    // Definir a resposta correta dependendo da página
+    if (pageNumber === 1) {
+        correctAnswer = "image1"; // Exemplo: o gato é a imagem1
+    } else if (pageNumber === 2) {
+        correctAnswer = "image3"; // Exemplo: o cachorro é a imagem3
+    }
+
+    // Verificar se a resposta está correta
+    if (selectedImageId === correctAnswer) {
         alert("Resposta correta!");
     } else {
         alert("Resposta incorreta. Tente novamente.");
