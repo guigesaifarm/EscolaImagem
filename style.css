@@ -33,6 +33,16 @@ h1 {
     margin: 10px;
     border: 2px solid #ddd;
     border-radius: 8px;
+    cursor: pointer; /* Aparece como uma mãozinha para indicar que a imagem pode ser clicada */
+    transition: transform 0.3s ease; /* Transição suave ao clicar */
+}
+
+.quiz-image:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente a imagem ao passar o mouse */
+}
+
+.selected {
+    border: 3px solid #4CAF50; /* Destaca a imagem selecionada com uma borda verde */
 }
 
 button {
