@@ -46,7 +46,7 @@ function checkAnswer(selectedImageId, pageNumber) {
     if (pageNumber === 1) {
         correctAnswer = "image1"; // Exemplo: o gato é a imagem1
     } else if (pageNumber === 2) {
-        correctAnswer = "image3"; // Exemplo: o cachorro é a imagem3
+        correctAnswer = "image4"; // Exemplo: o cachorro é a imagem4
     }
 
     // Verificar se a resposta está correta
