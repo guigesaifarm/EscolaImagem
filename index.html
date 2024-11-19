@@ -12,8 +12,9 @@
             <h1>Questionário de Imagens</h1>
             <div class="question">
                 <p>1. Qual imagem corresponde a um gato?</p>
-                <img src="Imagem1.jpg" alt="Imagem 1" class="quiz-image" id="image1">
-                <img src="Imagem2.jpg" alt="Imagem 2" class="quiz-image" id="image2">
+                <!-- Imagens com evento de clique para selecionar -->
+                <img src="Imagem1.jpg" alt="Imagem 1" class="quiz-image" id="image1" onclick="selectImage('image1')">
+                <img src="Imagem2.jpg" alt="Imagem 2" class="quiz-image" id="image2" onclick="selectImage('image2')">
             </div>
             <button onclick="nextPage(1)">Próxima Pergunta</button>
         </div>
@@ -21,8 +22,9 @@
             <h1>Questionário de Imagens</h1>
             <div class="question">
                 <p>2. Qual imagem corresponde a um cachorro?</p>
-                <img src="Imagem1.jpg" alt="Imagem 1" class="quiz-image" id="image3">
-                <img src="Imagem2.jpg" alt="Imagem 2" class="quiz-image" id="image4">
+                <!-- Imagens com evento de clique para selecionar -->
+                <img src="Imagem1.jpg" alt="Imagem 1" class="quiz-image" id="image3" onclick="selectImage('image3')">
+                <img src="Imagem2.jpg" alt="Imagem 2" class="quiz-image" id="image4" onclick="selectImage('image4')">
             </div>
             <button onclick="nextPage(2)">Finalizar</button>
         </div>
