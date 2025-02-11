@@ -1,45 +1,64 @@
-body {
-    font-family: sans-serif;
+/* Resetando margens e preenchimento */
+* {
+    
+    body {   
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
+#quiz-container {
+    background-color: #fff;
+
+}    
 
 header {
-    background-color: #f0f0f0;
     padding: 20px;
     text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-main {
-    padding: 20px;
-}
-
-#fotos {
+h1 {
     margin-bottom: 20px;
 }
+    
 
-.galeria {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.galeria img {
-    width: 300px;
-    height: 200px;
+.quiz-image {
+    width: 45%;
     margin: 10px;
-    border: 5px solid #fff;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer; /* Aparece como uma mãozinha para indicar que a imagem pode ser clicada */
+    transition: transform 0.3s ease; /* Transição suave ao clicar */
+}
+    .quiz-image:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente a imagem ao passar o mouse */
+    }      
+
+.selected {
+    border: 3px solid #4CAF50; /* Destaca a imagem selecionada com uma borda verde */
+}
+
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
     cursor: pointer;
+    border-radius: 5px;
 }
+    
 
-#descricao, #informacoes, #formulario {
-    margin-bottom: 20px;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-}
+button:hover {
+    background-color: #45a049;
+}    
